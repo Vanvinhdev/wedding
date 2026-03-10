@@ -3131,8 +3131,11 @@ section#welcome .image-wrapper #banner {
 
 section#hero::before,
 #story .bg-color-overlay::before,
-#invitation.bg-color-overlay::before {
+.bg-color-overlay::before {
   background-color: #ee8584 !important;
+}
+#invitation.bg-color-overlay::before {
+  background-color: #ffdbd5 !important;
 }
 
 .hero-wrapper::before,
