@@ -277,8 +277,8 @@ if(!biicore.isPremium && !biicore.templatePremium) {
 	<div class="bii-logo"><div class="bii-logo-secondary"><div class="bii-logo-secondary-content">Nền tảng tạo Website đám cưới miễn phí!</div></div><a href="#" target="_blank"><img src="#" /></a></div>
 	<div class="bii-footer" style="z-index:9999;background-color: #000;border-top: 1px solid #df4759;color: #fff;text-align: center;letter-spacing: 1px;bottom: 0;width: 100%;font-size: 15px;">
 		<div class="container">
-			<a style="color: #fff;padding: 10px 0 13px;display: flex;align-items: center;justify-content: center;" href="https://thiepcuoionline.huythanhjewelry.vn/" target="_blank">
-				<span style="margin-right: 5px;"><img width="30" src="${biiLogo}" style="border: 1px solid #fff;border-radius: 50%;width:30px!important;margin-right:5px;" /> IWedding</span> | <span class="show-desktop" style="margin-left: 5px;">Nền tảng tạo website đám cưới miễn phí từ huythanh</span><span class="show-mobile">Tạo website đám cưới miễn phí</span>
+			<a style="color: #fff;padding: 10px 0 13px;display: flex;align-items: center;justify-content: center;" href="https://mwedding.vn/" target="_blank">
+				<span style="margin-right: 5px;"><img width="30" src="${biiLogo}" style="border: 1px solid #fff;border-radius: 50%;width:30px!important;margin-right:5px;" /> IWedding</span> | <span class="show-desktop" style="margin-left: 5px;">Nền tảng tạo website đám cưới miễn phí từ wedding</span><span class="show-mobile">Tạo website đám cưới miễn phí</span>
 				<span style="line-height: 15px;vertical-align: middle;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
 					  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>

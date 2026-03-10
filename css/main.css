@@ -2970,7 +2970,6 @@ section#hard .hard-children-banner {
 section#welcome {
   position: relative;
   margin-bottom: 30px;
-  /* background-image: url(https://www.huythanhjewelry.vn/storage/photos/shares/wedding/banner.png); */
   height: 840px;
   overflow: hidden;
   max-height: calc(100vh - var(--header-height));
@@ -3133,7 +3132,7 @@ section#welcome .image-wrapper #banner {
 section#hero::before,
 #story .bg-color-overlay::before,
 #invitation.bg-color-overlay::before {
-  background-color: #ffdbd5 !important;
+  background-color: #ee8584 !important;
 }
 
 .hero-wrapper::before,
