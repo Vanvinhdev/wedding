@@ -2847,58 +2847,58 @@
     }
 
     $('.btn-blessing').on('click', function(e) {
-        e.preventDefault();
-        // if (window.location.href.includes('/moi-cuoi')) {
-        var slug = $('input[name="slug"][hidden]').val();
-        var name = $('#guest-name').val().trim();
-        // var mail = $('#guest-mail').val().trim();
-        var blessing = $('.vitualTextarea #content').val().trim();
-        // var avatarFile = $('#avatar-upload')[0].files[0]; // Lấy file ảnh (nếu có)
+    e.preventDefault();
 
-        if (!name) {
-            showErrorPopup('Tên không được để trống!');
-            return;
+    var slug = $('input[name="slug"][hidden]').val();
+    var name = $('#guest-name').val().trim();
+    var blessing = $('.vitualTextarea #content').val().trim();
+
+    if (!name) {
+        showErrorPopup('Tên không được để trống!');
+        return;
+    }
+
+    if (!blessing) {
+        showErrorPopup('Lời chúc không được để trống!');
+        return;
+    }
+
+    // JSON gửi lên Supabase
+    var jsonData = {
+        name: name,
+        message: blessing
+    };
+
+    $.ajax({
+        url: 'https://gbgabolasldhgkptcqap.supabase.co/rest/v1/members',
+        method: 'POST',
+
+        headers: {
+            "apikey": "sb_publishable__0nyipzaj4h7kTVf2M9imA_FMCPCwEy",
+            "Authorization": "Bearer sb_publishable__0nyipzaj4h7kTVf2M9imA_FMCPCwEy",
+            "Content-Type": "application/json",
+            "Prefer": "return=representation"
+        },
+
+        data: JSON.stringify(jsonData),
+
+        success: function(response) {
+            console.log('Phản hồi:', response);
+            showSuccessPopup('Gửi lời chúc thành công.');
+
+            $('#guest-name').val('');
+            $('#guest-blessing').val('');
+            $('#avatar-upload').val('');
+            $('.vitualTextarea #content').val('');
+        },
+
+        error: function(xhr, status, error) {
+            console.error('Lỗi:', error);
+            showErrorPopup('Có lỗi lầm đâu đó rồi ;((');
         }
-        if (!blessing) {
-            showErrorPopup('Lời chúc không được để trống!');
-            return;
-        }
-
-        // Tạo FormData
-        var formData = new FormData();
-        formData.append('slug', slug);
-        formData.append('name', name);
-        // formData.append('mail', mail);
-        formData.append('congratulations', blessing);
-
-        $.ajax({
-            headers: {
-                "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
-            },
-            url: '/api/blessing',
-            method: 'POST',
-            data: formData,
-            processData: false, // Ngăn jQuery tự động chuyển đổi dữ liệu
-            contentType: false, // Ngăn jQuery thiết lập header Content-Type
-            success: function(response) {
-                console.log('Phản hồi:', response);
-                showSuccessPopup('Gửi lời chúc thành công.');
-                $('#guest-name').val('');
-                $('#guest-blessing').val('');
-                $('#avatar-upload').val('');
-                $('.vitualTextarea #content').val('');
-                // fetchBlessingData(); // Gọi hàm lấy dữ liệu nếu cần
-            },
-            error: function(xhr, status, error) {
-                console.error('Lỗi:', error);
-                showErrorPopup('Có lỗi lầm đâu đó rồi ;((');
-            }
-        });
-        // } else {
-        //     showSuccessPopup('Gửi lời chúc thành công.');
-        // }
     });
 
+});
     // fetchBlessingData();
 </script>
         <style>
