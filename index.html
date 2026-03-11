@@ -1096,6 +1096,7 @@
 </style>
 
 
+
 <section id="hero" class=" editable-parent scroll-to  " style="background-color: #ee8584 !important;">
     <div class="ht-slideshow">
         <div class="ht-slides">
@@ -3684,7 +3685,7 @@
         ];
         var custom_color = "#ee8584";
         const biicore = {
-            bgMusic: '/mp3/lamnguoiyeuanhnhe.mp3',
+            bgMusic: './mp3/wedding.mp3',
             isPremium: ('1' === '1'),
             templatePremium: ('1' === '1'),
             alert: JSON.parse('[]'),
@@ -3954,13 +3955,22 @@
             </div>
         </div>
     </div>
+    <!-- <audio id="bg-music" autoplay loop>
+        <source src="./mp3/wedding.mp3" type="audio/mpeg">
+    </audio> -->
     <div id="template-settings" class="form-style d-none"><i class="fas fa-cog"></i>
         <h4 class="center">Live Preview Settings</h4><br>
         <h4>Color:</h4><span class="minicolors minicolors-theme-bootstrap minicolors-swatch-position-left minicolors-swatch-left minicolors-position-default"><span class="minicolors-swatch"><span style="background-color: rgb(238, 133, 132);"></span></span><input class="minicolors minicolors-input" type="text" name="color-picker" value="#ee8584" size="7" maxlength="7"><span class="minicolors-panel minicolors-slider-hue"><span class="minicolors-slider"><span class="minicolors-picker" style="top: 149.764px;"></span></span><span class="minicolors-opacity-slider"><span class="minicolors-picker"></span></span><span class="minicolors-grid" style="background-color: rgb(255, 4, 0);"><span class="minicolors-grid-inner"></span><span class="minicolors-picker" style="top: 10px; left: 67px;"><span></span></span></span></span></span>
-        <audio src="media/lamnguoiyeuanhnhe.mp3" controls="controls" style="display: none;"></audio>
+        <!-- <audio src="media/lamnguoiyeuanhnhe.mp3" controls="controls" style="display: none;"></audio> -->
+
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" data-cf-beacon="{" version":"2024.11.0","token":"29cb71a6cc4a463789b01068cd791fd7","server_timing":{"name":{"cfcachestatus":true,"cfedge":true,"cfextpri":true,"cfl4":true,"cforigin":true,"cfspeedbrain":true},"location_startswith":null}}"="" crossorigin="anonymous"></script>
-
-
+<!-- 
+<script>
+    document.addEventListener("click", function () {
+        var audio = document.getElementById("bg-music");
+        audio.play();
+    }, { once: true });
+</script> -->
 <script>
     function logToServer(message) {
         var xhr = new XMLHttpRequest();
