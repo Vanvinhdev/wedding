@@ -778,9 +778,9 @@ input:focus {
 .text-limit-3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3; */
   /* Số dòng hiển thị */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .fancybox-wrap {
@@ -3132,7 +3132,8 @@ section#welcome .image-wrapper #banner {
 section#hero::before,
 #story .bg-color-overlay::before,
 .bg-color-overlay::before {
-  background-color: #ee8584 !important;
+  /* background-color: #ee8584 !important; */
+  background-color: #ffb0b0 !important;
 }
 #invitation.bg-color-overlay::before {
   background-color: #ffdbd5 !important;
