@@ -165,7 +165,7 @@ var templateSettings = {
             '.marker::before, .marker:hover::after {border-color:' + clr + ' transparent transparent transparent;}'+
             '#footer .copyright a, .widget-quick-links > ul li a, .contact-info li a, .widget-tags .tags a, .widget-latest-posts > ul h3 a, .widget-categories > ul li a, .comments .comment-list > li .comment .reply-btn, .comments .comment-list > li .comment-info .reply-btn, .blog-listing .item .blog-meta li a, .blog-listing .post-content .blog-meta li a, .blog-main .item .blog-meta li a, .blog-main .post-content .blog-meta li a {background-image: linear-gradient('+clr+','+clr+');}'+
             '#rsvp {background: linear-gradient(#fff 50%, '+clr+' 50%) no-repeat;}'+
-            '#rsvp.section-bg-color {background: linear-gradient(#f9f9f9 50%, '+clr+' 50%) no-repeat;}'+
+            '#rsvp.section-bg-color {background: linear-gradient(#f9f9f9 50%, #ffdbd5 50%) no-repeat;}'+
             '#rsvp-2 {background: linear-gradient('+clr+' 50%, #fff 50%) no-repeat;}'+
             '#rsvp-2.section-bg-color {background: linear-gradient('+clr+' 50%, #f9f9f9 50%) no-repeat;}'+
             '#rsvp-2.section-bg-color::before {border-color: '+clr+' transparent transparent transparent;}'+
